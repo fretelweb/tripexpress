@@ -18,7 +18,7 @@
 
 						echo '
 								<p>#'.($i+1).' '.lang('Ticket for').' <strong>'.ucfirst($first_name[$i]).' '.ucfirst($last_name[$i]).'</strong> '.lang('was booked successfully').'
-									<a href="'.base_url().'bookings/pdf/2" class="btn btn-success btn-xs">'.lang('Print invoice').'</a>
+									<a href="'.base_url().'admin/bookings/pdf/2" class="btn btn-success btn-xs">'.lang('Print invoice').'</a>
 								</p>
 							';
 

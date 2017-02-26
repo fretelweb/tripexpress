@@ -1,4 +1,5 @@
 <?php
+
 $lang['First name'] = "First name";
 $lang['Last name'] = "Last name";
 $lang['ID number'] = "ID number";
@@ -34,5 +35,3 @@ $lang['Ticket for'] = "Ticket for";
 $lang['was booked successfully'] = "was booked successfully";
 $lang['Print invoice'] = "Print invoice";
 $lang['Go back to search'] = "Go back to search";
-
-?>

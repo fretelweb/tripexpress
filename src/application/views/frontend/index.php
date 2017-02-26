@@ -12,17 +12,17 @@
       <title>Inicio - My Tour Perú</title>
 
       <!-- Bootstrap core CSS -->
-      <link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
-      <link href="<?php echo base_url(); ?>css/datetimepicker.min.css" rel="stylesheet">
+      <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
+      <link href="<?php echo base_url(); ?>assets/css/datetimepicker.min.css" rel="stylesheet">
 
       <!-- METRO UI CSS 2.0 FONTS -->
       <link href="http://localhost/tripexpress/css/iconFont.min.css" rel="stylesheet">
 
       <!-- Login form CSS -->
-      <link href="<?php echo base_url(); ?>css/frontend.css" rel="stylesheet">
+      <link href="<?php echo base_url(); ?>assets/css/frontend.css" rel="stylesheet">
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-      <script src="<?php echo base_url(); ?>js/ie10-viewport-bug-workaround.js"></script>
-      <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.min.js"></script>
+      <script src="<?php echo base_url(); ?>assets/js/ie10-viewport-bug-workaround.js"></script>
+      <script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
 
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
       <!--[if lt IE 9]>
@@ -43,7 +43,7 @@
                   <li role="presentation"><a href="#contacto">Contacto</a></li>
                </ul>
             </nav>
-            <h3 class="text-muted">My Tour Perú</h3>
+            <h3 class="text-muted">My Tour Perú <small>Viajes &amp; Turismo</small></h3>
          </div>
       </div> <!-- /container -->
 
@@ -83,15 +83,16 @@
                   </div>
 
                   <div class="col-sm-4 col-md-6">
-                     <label><?php echo lang('Departure date'); ?> <span class="text-muted">(<?php echo lang('Optional'); ?>)</span></label>
+                     <label><?php echo lang('Departure date'); ?></label>
                      <div class="form-group date" id="datepicker1">
                         <input type="text" class="form-control" name="from_date" id="from_date" data-date-format="YYYY-MM-DD" value="">
-                        <span class="input-group-addon"><span class="icon-calendar"></span></span>
+                        <span class="input-group-addon">
+                           <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
                         <script type="text/javascript">
                            $(function() {
                               $('#datepicker1').datetimepicker({
-                                 pickTime: false,
-                                 useCurrent: false
+                                 pickTime: false, useCurrent: true
                               });
                            });
                         </script>
@@ -99,15 +100,16 @@
                   </div>
 
                   <div class="col-sm-4 col-md-6">
-                     <label><?php echo lang('Return date'); ?></label>
+                     <label><?php echo lang('Return date'); ?> <span class="text-muted">(<?php echo lang('Optional'); ?>)</span></label>
                      <div class="form-group date" id="datepicker2">
                         <input type="text" class="form-control" name="from_back_date" id="from_back_date" data-date-format="YYYY-MM-DD" value="">
-                        <span class="input-group-addon"><span class="icon-calendar"></span></span>
+                        <span class="input-group-addon">
+                           <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
                         <script type="text/javascript">
                            $(function() {
                               $('#datepicker2').datetimepicker({
-                                 pickTime: false,
-                                 useCurrent: false
+                                 pickTime: false, useCurrent: false
                               });
                            });
                         </script>
@@ -198,10 +200,10 @@
       </div> <!-- /container -->
 
 
-      <script src="<?php echo base_url(); ?>/js/bootstrap.min.js"></script>
-      <script src="<?php echo base_url(); ?>/js/docs.min.js"></script>
-      <script src="<?php echo base_url(); ?>/js/moment.js"></script>
-      <script src="<?php echo base_url(); ?>/js/datetimepicker.js"></script>
+      <script src="<?php echo base_url(); ?>/assets/js/bootstrap.min.js"></script>
+      <script src="<?php echo base_url(); ?>/assets/js/docs.min.js"></script>
+      <script src="<?php echo base_url(); ?>/assets/js/moment.js"></script>
+      <script src="<?php echo base_url(); ?>/assets/js/datetimepicker.js"></script>
 
    </body>
 </html>

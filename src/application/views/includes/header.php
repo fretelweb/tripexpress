@@ -15,14 +15,14 @@
       <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
 
       <!-- Bootstrap core CSS -->
-      <link href="<?php echo base_url(); ?>css/bootstrap.min.css" rel="stylesheet">
+      <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
 
       <!-- METRO UI CSS 2.0 FONTS -->
-      <link href="<?php echo base_url(); ?>css/iconFont.min.css" rel="stylesheet">
+      <link href="<?php echo base_url(); ?>assets/css/iconFont.min.css" rel="stylesheet">
 
       <!-- Custom styles for this template -->
-      <link href="<?php echo base_url(); ?>css/dashboard.css" rel="stylesheet">
-      <link href="<?php echo base_url(); ?>css/datetimepicker.min.css" rel="stylesheet">
+      <link href="<?php echo base_url(); ?>assets/css/dashboard.css" rel="stylesheet">
+      <link href="<?php echo base_url(); ?>assets/css/datetimepicker.min.css" rel="stylesheet">
 
       <!-- Morris charts -->
       <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
@@ -31,8 +31,8 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-      <script src="<?php echo base_url(); ?>js/ie10-viewport-bug-workaround.js"></script>
-      <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.min.js"></script>
+      <script src="<?php echo base_url(); ?>assets/js/ie10-viewport-bug-workaround.js"></script>
+      <script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!--[if lt IE 9]>

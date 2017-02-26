@@ -64,13 +64,13 @@
                      <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="home">
                            <div class="form-group">
-                              <label for="city">Qyteti i nisjes</label>
+                              <label for="city">Salida</label>
                               <select class="form-control" name="from" id="from">
                                  <option value="0"></option>
                               </select>
                            </div>
                            <div class="form-group">
-                              <label for="city">Qyteti i mbërritjes</label>
+                              <label for="city">Destino</label>
                               <select class="form-control" name="from" id="from">
                                  <option value="0"></option>
                               </select>
@@ -93,7 +93,7 @@
                               </select>
                            </div>
                            <div class="form-group">
-                              <button type="button" id="check" class="btn btn-success" value="submit"><span class="icon-search"></span> Kërko</button>
+                              <button type="button" id="check" class="btn btn-success" value="submit"><span class="icon-search"></span> Reservar</button>
                            </div>
                         </div>
 
