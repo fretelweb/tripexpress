@@ -5,7 +5,7 @@
       </div>
    </div>
    <div class="row">
-      <?php //echo  validation_errors(); ?>
+      <?php echo validation_errors(); ?>
       <?php echo form_open('admin/tours/add_tour'); ?>
       <div class="col-sm-4 col-md-4">
 

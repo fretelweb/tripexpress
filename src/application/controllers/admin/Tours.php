@@ -1,7 +1,6 @@
 <?php
 
-if (!defined('BASEPATH'))
-   exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Tours extends CI_Controller {
 
@@ -22,6 +21,7 @@ class Tours extends CI_Controller {
       $data['company_info'] = $this->tour->get_company_info();
       $data['main_content'] = 'backend/tours/tours';
       $data['title'] = 'Tours';
+
       $this->load->view('includes/template', $data);
    }
 
@@ -35,12 +35,13 @@ class Tours extends CI_Controller {
    }
 
    function add_tour() {
+
       $this->form_validation->set_error_delimiters('<p class="text-danger">', '</p>');
       $this->form_validation->set_rules('from', 'Departure city', 'trim|required|callback__citynull_check');
       $this->form_validation->set_rules('to', 'Arrival city', 'trim|required|callback__citynull_check');
       $this->form_validation->set_rules('available_seats', 'Available seats', 'trim|required');
       $this->form_validation->set_rules('start_price', 'Start price', 'trim|required');
-      $this->form_validation->set_rules('tour_type', 'Tour type', 'string|trim|required');
+//      $this->form_validation->set_rules('tour_type', 'Tour type', 'string|trim|required');
 
       if ($this->input->post('tour_type') == 'Automatic') {
          $this->form_validation->set_rules('automatic_from', 'From date', 'trim|required');
@@ -53,6 +54,7 @@ class Tours extends CI_Controller {
       }
 
       if ($this->form_validation->run() == FALSE) {
+
          $this->load->model('tour');
          $data['cities'] = $this->tour->list_cities();
          $data['main_content'] = 'backend/tours/add_tour';
@@ -62,6 +64,7 @@ class Tours extends CI_Controller {
          $this->load->model('tour');
          $data = $this->input->post();
          $this->tour->create_tour($data);
+
          if ($data['tour_type'] == 'Manual')
             $this->session->set_flashdata('message', 'Tour successfully created');
          else

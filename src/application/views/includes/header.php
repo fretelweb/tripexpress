@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="">
       <meta name="author" content="">
-      <link rel="icon" href="<?php echo base_url(); ?>images/favicon.ico">
+      <link rel="icon" href="/favicon.ico">
 
       <title><?php echo $title ?> | GBuses</title>
 
@@ -55,9 +55,6 @@
                         <ul class="dropdown-menu dropdown-menu-right" role="menu">
                            <li><a href="<?php echo base_url(); ?>admin/language/change/english">English</a></li>
                            <li><a href="<?php echo base_url(); ?>admin/language/change/espaniol">Español</a></li>
-                           <li><a href="<?php echo base_url(); ?>admin/language/change/kinyarwanda">Kinyarwanda</a></li>
-                           <li><a href="<?php echo base_url(); ?>admin/language/change/shqip">Shqip</a></li>
-                           <li><a href="<?php echo base_url(); ?>admin/language/change/makedonski">Македонски</a></li>
                         </ul>
                      </div>
                   </li>

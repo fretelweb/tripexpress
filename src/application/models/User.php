@@ -3,6 +3,8 @@
 Class User extends CI_Model {
 
    function validate() {
+
+
       $this->db->where('username', $this->input->post('username'));
       $this->db->where('password', MD5($this->input->post('password')));
       $this->db->where('blocked', "0");
@@ -10,7 +12,7 @@ Class User extends CI_Model {
 
       $query = $this->db->get('users');
 
-      if ($query->num_rows != 0) {
+      if ($query->num_rows() != 0) {
          return true;
       }
    }
@@ -101,5 +103,3 @@ Class User extends CI_Model {
    }
 
 }
-
-?>

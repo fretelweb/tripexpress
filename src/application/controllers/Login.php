@@ -1,7 +1,6 @@
 <?php
 
-if (!defined('BASEPATH'))
-   exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login extends CI_Controller {
 
@@ -12,8 +11,10 @@ class Login extends CI_Controller {
    }
 
    function validate_credentials() {
+
       $this->load->model('user');
       $query = $this->user->validate();
+
       if ($query) {
          $data = array(
              'username' => $this->input->post('username'),

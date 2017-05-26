@@ -64,9 +64,10 @@ Class Stats extends CI_Model {
       $this->db->join('tours', 'bookings.tour_back_id = tours.tour_id');
       $this->db->where('bookings.created_time >=', $from);
       $this->db->where('bookings.created_time <=', $to);
-      $this->db->where('!(bookings.tour_id <=> bookings.tour_back_id)');
+      $this->db->where('!(bookings.tour_id = bookings.tour_back_id)');
       if ($member_filter != 'null')
          $this->db->where('bookings.created_by', $member_filter);
+
       $query = $this->db->get();
       if ($query->num_rows() > 0) {
          $row = $query->row();
