@@ -12,5 +12,30 @@
             <file>file:/D:/Desarrollo/webapps/gbuses/src/application/controllers/index.php</file>
             <file>file:/D:/Desarrollo/webapps/gbuses/src/application/language/english/bookings_lang.php</file>
         </group>
+        <group name="Paginas Dev">
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/controllers/admin/Tours.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/composer.json</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/views/includes/navigation.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/language/espaniol/form_validation_lang.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/views/backend/statistics/statistics.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/models/Stats.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/config/config.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/.editorconfig</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/views/backend/members/members.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/config/autoload.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/controllers/admin/Clients.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/config/database.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/assets/js/ajax.js</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/system/core/CodeIgniter.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/views/backend/clients/clients.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/views/frontend/index.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/views/includes/header.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/controllers/admin/Destinations.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/views/includes/footer.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/libraries/Pagination.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/controllers/admin/Statistics.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/language/espaniol/bookings_lang.php</file>
+            <file>file:/D:/Desarrollo/webapps/gBuses/src/application/language/espaniol/pagination_lang.php</file>
+        </group>
     </open-files>
 </project-private>
